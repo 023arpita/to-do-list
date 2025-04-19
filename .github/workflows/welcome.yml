@@ -1,1 +1,15 @@
+name: Welcome Message
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet the contributor
+        run: echo "🎉 Thanks for contributing! We appreciate your effort. 🙌"
 
