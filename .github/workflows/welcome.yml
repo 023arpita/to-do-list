@@ -10,6 +10,9 @@ jobs:
   welcome:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
       - name: Greet the contributor
         run: echo "🎉 Thanks for contributing! We appreciate your effort. 🙌"
 
